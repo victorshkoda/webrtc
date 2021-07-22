@@ -8,7 +8,7 @@ const server = http.createServer(app)
 const io = require('socket.io')(server)
 
 io.on('connection', (socket) => {
-    console.log(`User with id: ${socket.id} connected to socket.io server`)
+    console.log(`User with id: ${socket.id} connected to socket.io server.`)
 })
 
 app.use(serveStatic(path.join(__dirname, 'public')))
